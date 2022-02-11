@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+
+    >
+<!--    header-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+
+        android:background="@color/cardview_dark_background"
+
+        android:text="@string/myemployee_app"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp"
+        />
+
+<!--    search bar-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/et_employee"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/search_employee"
+            />
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:textSize="20sp"
+            android:hint="@string/search"
+            android:textColorHint="@color/white"
+            android:background="@drawable/search_btn_style"
+            >
+
+        </Button>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_employeelist"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_margin="20dp"
+
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+<!--    bottom menu-->
+    <LinearLayout
+        android:id="@+id/bottom_navbar"
+        android:layout_width="360dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@drawable/search_btn_style"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        >
+
+        <Button
+            android:id="@+id/btn_employee_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_baseline_person_search_48"
+            android:background="#00FFFFFF"
+            android:layout_margin="5dp"
+            android:hint="@string/employee_search"
+            android:fontFamily="sans-serif"
+            android:textColorHint="@color/white"
+            android:textSize="12sp"
+            />
+
+        <Button
+            android:id="@+id/btn_saved_addresses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_baseline_person_pin_48"
+            android:background="#00FFFFFF"
+            android:layout_margin="5dp"
+            android:hint="@string/saved_addresses"
+            android:fontFamily="sans-serif"
+            android:textColorHint="@color/white"
+            android:textSize="12sp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

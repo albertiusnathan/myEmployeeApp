@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">myEmployeeApp</string>
+    <string name="search_employee">Search Employee</string>
+    <string name="search">Search</string>
+    <string name="myemployee_app">myEmployee App</string>
+    <string name="employee_search">Employee Search</string>
+    <string name="saved_addresses">Saved Addresses</string>
+</resources>
