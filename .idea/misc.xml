@@ -3,9 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Kuliah/SEMESTER 5/MOBPROG/myEmployeeApp/app/src/main/res/drawable/recyclerborder.xml" value="0.132" />
         <entry key="..\:/Kuliah/SEMESTER 5/MOBPROG/myEmployeeApp/app/src/main/res/drawable/search_btn_style.xml" value="0.2975" />
-        <entry key="..\:/Kuliah/SEMESTER 5/MOBPROG/myEmployeeApp/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kuliah/SEMESTER 5/MOBPROG/myEmployeeApp/app/src/main/res/layout/activity_main.xml" value="0.16" />
         <entry key="..\:/Kuliah/SEMESTER 5/MOBPROG/myEmployeeApp/app/src/main/res/layout/employee_detail_page.xml" value="0.36666666666666664" />
+        <entry key="..\:/Kuliah/SEMESTER 5/MOBPROG/myEmployeeApp/app/src/main/res/layout/employee_recycler_layout.xml" value="0.2128623188405797" />
+        <entry key="..\:/Kuliah/SEMESTER 5/MOBPROG/myEmployeeApp/app/src/main/res/layout/fragment_saved_address.xml" value="0.121875" />
+        <entry key="..\:/Kuliah/SEMESTER 5/MOBPROG/myEmployeeApp/app/src/main/res/layout/fragment_search_employee.xml" value="0.1078125" />
       </map>
     </option>
   </component>

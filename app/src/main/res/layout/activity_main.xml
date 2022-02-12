@@ -24,50 +24,12 @@
         android:textSize="20sp"
         />
 
-<!--    search bar-->
-    <LinearLayout
+    <!--    bottom menu-->
+    <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal"
+        android:layout_height="500dp" />
 
-        android:layout_gravity="center">
-
-        <EditText
-            android:id="@+id/et_employee"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:hint="@string/search_employee"
-            />
-
-        <Button
-            android:id="@+id/search_btn"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="15dp"
-            android:textSize="20sp"
-            android:hint="@string/search"
-            android:textColorHint="@color/white"
-            android:background="@drawable/search_btn_style"
-            >
-
-        </Button>
-
-    </LinearLayout>
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rc_employeelist"
-        android:layout_width="match_parent"
-        android:layout_height="450dp"
-        android:layout_margin="20dp"
-
-        >
-
-    </androidx.recyclerview.widget.RecyclerView>
-
-<!--    bottom menu-->
     <LinearLayout
         android:id="@+id/bottom_navbar"
         android:layout_width="360dp"
@@ -76,7 +38,6 @@
         android:background="@drawable/search_btn_style"
         android:layout_gravity="center"
         android:gravity="center"
-
         >
 
         <Button
@@ -85,7 +46,9 @@
             android:layout_height="wrap_content"
             android:drawableTop="@drawable/ic_baseline_person_search_48"
             android:background="#00FFFFFF"
-            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="30dp"
             android:hint="@string/employee_search"
             android:fontFamily="sans-serif"
             android:textColorHint="@color/white"
@@ -98,7 +61,9 @@
             android:layout_height="wrap_content"
             android:drawableTop="@drawable/ic_baseline_person_pin_48"
             android:background="#00FFFFFF"
-            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="30dp"
             android:hint="@string/saved_addresses"
             android:fontFamily="sans-serif"
             android:textColorHint="@color/white"

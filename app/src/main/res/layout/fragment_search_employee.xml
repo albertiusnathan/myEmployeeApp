@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".searchEmployeeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--    search bar-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/et_employee"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/search_employee"
+                />
+
+            <Button
+                android:id="@+id/search_btn"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="15dp"
+                android:textSize="20sp"
+                android:hint="@string/search"
+                android:textColorHint="@color/white"
+                android:background="@drawable/search_btn_style"
+                >
+
+            </Button>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_employeelist"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_margin="20dp"
+
+
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+</FrameLayout>
