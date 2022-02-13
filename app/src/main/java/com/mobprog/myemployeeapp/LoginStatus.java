@@ -1,7 +1,7 @@
 package com.mobprog.myemployeeapp;
 
 public class LoginStatus {
-    public String UUID;
+    public String uuid;
     public String username;
     public String password;
     public String salt;

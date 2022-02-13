@@ -3,9 +3,10 @@ package com.mobprog.myemployeeapp;
 import android.net.Uri;
 
 import java.net.URI;
+import java.net.URL;
 
 public class EmployeePicture {
-    public Uri large;
-    public Uri medium;
-    public Uri thumbnail;
+    public String large;
+    public String medium;
+    public String thumbnail;
 }

@@ -1,28 +1,33 @@
 package com.mobprog.myemployeeapp;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.ArrayList;
 
 public class MainModel {
 
-    public Integer statCode;
-    public String NIMMhs;
-    public String NamaMhs;
+    public Integer statusCode;
+    public String nim;
+    public String nama;
     public String credits;
+    @SerializedName("employees")
     public ArrayList<Employee> employeesAL;
 
     public static class Employee{
-        public int employeeID;
-        public String employeeGender;
+        public int employeeId;
+        public String gender;
+        @SerializedName("name")
         public EmployeeName employeeName;
+        @SerializedName("location")
         public EmployeeLocation employeeLocation;
-        public String employeeEmail;
-        public LoginStatus loginStatus;
-        public DateOfBirth employeeDoB;
-        public RegisterDate employeeRegDate;
-        public Integer phoneNum;
-        public Integer cellNum;
+        public String email;
+        public LoginStatus login;
+        public DateOfBirth dob;
+        public RegisterDate registered;
+        public String phone;
+        public String cell;
         public EmployeeID id;
-        public EmployeePicture employeePic;
+        public EmployeePicture picture;
         public String nat;
     }
 
