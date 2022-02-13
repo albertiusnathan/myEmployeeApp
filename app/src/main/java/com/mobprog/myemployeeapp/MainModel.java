@@ -16,10 +16,21 @@ public class MainModel {
         public EmployeeName employeeName;
         public EmployeeLocation employeeLocation;
         public String employeeEmail;
-        public LoginStatus
-        public Integer phoneNum;
+        public LoginStatus loginStatus;
         public DateOfBirth employeeDoB;
         public RegisterDate employeeRegDate;
-        public Picture employeePic;
+        public Integer phoneNum;
+        public Integer cellNum;
+        public EmployeeID id;
+        public EmployeePicture employeePic;
+        public String nat;
+    }
+
+    public ArrayList<Employee> getEmployeesAL() {
+        return employeesAL;
+    }
+
+    public void setEmployeesAL(ArrayList<Employee> employeesAL) {
+        this.employeesAL = employeesAL;
     }
 }
