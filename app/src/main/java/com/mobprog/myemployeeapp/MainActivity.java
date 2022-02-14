@@ -4,28 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-
-import com.mobprog.myemployeeapp.Retrofit.APIEndpoint;
-import com.mobprog.myemployeeapp.Retrofit.APIService;
-
 import java.util.ArrayList;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends AppCompatActivity{
 
     Button employeeMenuBtn, savedAddressesMenuBtn;
     ArrayList<MainModel.Employee> employeeAL;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +23,7 @@ public class MainActivity extends AppCompatActivity{
         fm.commit();
 
         employeeAL = new ArrayList<>();
+
 
         employeeMenuBtn = findViewById(R.id.btn_employee_search);
         savedAddressesMenuBtn = findViewById(R.id.btn_saved_addresses);
@@ -54,7 +42,6 @@ public class MainActivity extends AppCompatActivity{
                 replaceFragment(new SavedAddressFragment());
             }
         });
-
     }
 
     private void replaceFragment(Fragment fragment) {

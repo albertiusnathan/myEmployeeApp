@@ -51,8 +51,7 @@ public class searchEmployeeFragment extends Fragment {
         });
 
         getDatafromAPI();
-
-         return view;
+        return view;
     }
 
     private void setOnClickListener() {
@@ -60,6 +59,7 @@ public class searchEmployeeFragment extends Fragment {
             @Override
             public void onClick(View v, int position) {
                 Intent intent = new Intent(getContext(), EmployeeDetail.class);
+                intent.putExtra("photo", (employeesAL.get(position).picture.thumbnail));
                 intent.putExtra("name", (employeesAL.get(position).employeeName.first+ " " + employeesAL.get(position).employeeName.last));
                 intent.putExtra("city", (employeesAL.get(position).employeeLocation.city+ ", " + employeesAL.get(position).employeeLocation.country));
                 intent.putExtra("phone", (employeesAL.get(position).cell+ " / " + employeesAL.get(position).phone));
